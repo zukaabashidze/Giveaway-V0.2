@@ -160,10 +160,6 @@
     <div class="card" id="main-card">
         <h2>გათამაშება 🎁</h2>
         <p class="subtitle">შეავსეთ მონაცემები მონაწილეობისთვის</p>
-        
-        <div class="input-group">
-            <input type="text" id="name" placeholder="სახელი გვარი" autocomplete="off">
-        </div>
         <div class="input-group">
             <input type="text" id="discord" placeholder="Discord Tag (მაგ: user#0000)" autocomplete="off">
         </div>
@@ -181,7 +177,7 @@
             const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
             
             // 1. Timezone შემოწმება
-            if (tz !== "Asia/Tbilisi") {
+            if (tz !== "Asia/Tbilisi" "Europe/Athens") {
                 blockUser("თქვენი დროის სარტყელი არასწორია. გთხოვთ გამორთოთ VPN.");
                 return;
             }
